@@ -70,7 +70,7 @@ const FIRSTFLAG = 1 << 0; // bit shifting left 0 places
 This changes the number `1` by moving it's bits to the left by `0` places. If we push `001` left by `0`, we still have `1`. 🙄 Okay, that was lame... lets try again. But push it left `1` space:
 
 ```javascript
-const SECONDFLAG = 1 << 1; // bit shifting left 0 places
+const SECONDFLAG = 1 << 1; // bit shifting left 1 place
 
 SECONDFLAG === 2;
 ```

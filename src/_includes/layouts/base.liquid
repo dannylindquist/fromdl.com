@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="/styles.css">
     <title>{{title}}</title>
   </head>
-  <body>
+  <body class="flex flex-col">
     <div class="">
       <div class="p-6">
         <a class="inline-block" href="/">
@@ -13,8 +13,13 @@
         </a>
       </div>
     </div>
-    <main class="p-6 prose md:prose-lg prose-slate mx-auto">
+    <main class="flex-1 p-6 prose md:prose-lg prose-slate mx-auto">
       {{content}}
     </main>
+    <footer class="flex font-mono text-sm item-center justify-center py-5 text-gray-600 text-center">
+      Made with 💜 in Seattle
+      <br>
+      Danny Lindquist 2022
+    </footer>
   </body>
 </html>
