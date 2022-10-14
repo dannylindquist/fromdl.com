@@ -4,7 +4,7 @@ layout: layouts/base.webc
 <a href="/">Back</a>
 <div class="h-8"></div>
 <div class="not-prose">
-  <h2 @html="this.title" class="text-4xl font-black tracking-tight leading-tighter"></h2>
-  <p @html="this.date.toLocaleDateString('default', { month: 'long', day: 'numeric', year: 'numeric'})" class="leading-10"></p>
+  <h2 @html="title" class="text-4xl font-black tracking-tight leading-tighter"></h2>
+  <p @html="niceDate(date)" class="leading-10"></p>
 </div>
-<template @html="this.content" webc:nokeep></template>
+<template @html="content" webc:nokeep></template>
