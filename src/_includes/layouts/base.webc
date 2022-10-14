@@ -2,8 +2,10 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles.css">
-    <title>{{title}}</title>
+    <link webc:raw rel="stylesheet" href="/styles.css">
+    <style @html="this.getCSS(this.page.url)"></style>
+		<script @html="this.getJS(this.page.url)"></script>
+    <title @html="this.title"></title>
   </head>
   <body class="flex flex-col">
     <div class="">
@@ -14,8 +16,7 @@
       </div>
     </div>
     <div class="flex-1 p-6">
-      <main class="prose md:prose-lg prose-slate mx-auto">
-        {{content}}
+      <main @html="this.content" class="prose md:prose-lg prose-slate mx-auto">
       </main>
     </div>
     <footer class="flex font-mono text-sm item-center justify-center py-5 text-gray-600 text-center">

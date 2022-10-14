@@ -1,5 +1,5 @@
 ---
-layout: layouts/blog.liquid
+layout: layouts/blog.webc
 tags: post
 title: An interesting usecase for bit manipulation
 excerpt: I dove into some interesting code that worked with binary number values. I try my best at disecting why it may be useful.
