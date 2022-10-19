@@ -3,7 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@11ty/eleventy': 2.0.0-canary.16
   '@11ty/eleventy-plugin-syntaxhighlight': ^4.1.0
-  '@11ty/eleventy-plugin-webc': ^0.5.0
+  '@11ty/eleventy-plugin-webc': ^0.5.1
   '@tailwindcss/typography': ^0.5.7
   npm-run-all: ^4.1.5
   tailwindcss: ^3.1.8
@@ -11,7 +11,7 @@ specifiers:
 devDependencies:
   '@11ty/eleventy': 2.0.0-canary.16
   '@11ty/eleventy-plugin-syntaxhighlight': 4.1.0
-  '@11ty/eleventy-plugin-webc': 0.5.0
+  '@11ty/eleventy-plugin-webc': 0.5.1
   '@tailwindcss/typography': 0.5.7_tailwindcss@3.1.8
   npm-run-all: 4.1.5
   tailwindcss: 3.1.8
@@ -51,12 +51,12 @@ packages:
       prismjs: 1.29.0
     dev: true
 
-  /@11ty/eleventy-plugin-webc/0.5.0:
-    resolution: {integrity: sha512-nVsQ6Gg8tI3FrrqV1Yp79JX2PumvOODdqmzMg6I1rviTpI/Z+MqDy7CCXYgNZOKQRSdCAEjoRmrXW1ghvn1zGA==}
+  /@11ty/eleventy-plugin-webc/0.5.1:
+    resolution: {integrity: sha512-HK534yUFBwWBOenMaq3A/7k/O6JVcWbKVPeeTXEU4fd6ngX9W7qnvvJlXEZCKFWfH7a3uHuSbEDcmky1Eu2ywQ==}
     engines: {node: '>=14.18'}
     dependencies:
       '@11ty/eleventy': 2.0.0-canary.16
-      '@11ty/webc': 0.5.2
+      '@11ty/webc': 0.5.4
     transitivePeerDependencies:
       - bufferutil
       - supports-color
@@ -118,8 +118,8 @@ packages:
       - utf-8-validate
     dev: true
 
-  /@11ty/webc/0.5.2:
-    resolution: {integrity: sha512-XD7japNKRfEJjglqLXkGVR9oTH15ahRIRixss5p4fSEcVEkW6bJ3l5s/0evT9fj9wjwl31BxhQhqW3d/zPn16Q==}
+  /@11ty/webc/0.5.4:
+    resolution: {integrity: sha512-cRLSftm69gtPEgUuRH+IEqUSXv1aTAD/p+BoGXZb/eMxOtTbZdeCX8pKmoFlzmx3g6dH283GbD+ADHre0EaGAw==}
     engines: {node: '>=14.18'}
     dependencies:
       '@11ty/eleventy-utils': 1.0.1
