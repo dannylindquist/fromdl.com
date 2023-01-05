@@ -6,7 +6,7 @@
   "scripts": {
     "dev:eleventy": "eleventy --serve",
     "dev:css": "tailwindcss -i ./styles.css -o _site/styles.css -w",
-    "dev": "npm-run-all --parallel dev:*",
+    "dev": "npm-run-all --parallel 'dev:*'",
     "build:css": "tailwindcss -i ./styles.css -o _site/styles.css -m",
     "build": "pnpm build:css && pnpm eleventy"
   },

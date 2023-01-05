@@ -3,7 +3,7 @@ layout: layouts/blog.webc
 tags: post
 title: An interesting usecase for bit manipulation
 excerpt: I dove into some interesting code that worked with binary number values. I try my best at disecting why it may be useful.
-date: 2022-10-08
+date: 2023-01-06
 ---
 
 The other day, I was reading the source code to <a href="https://github.com/preactjs/signals" noreferrer target="_blank">preact/signals</a> and came across code that looked somewhat like this:
@@ -82,3 +82,9 @@ If you continue this for each of the flags you might need, you will see the doub
 ### So what?
 
 Okay now we have the ability to store some information within a single number value. Why might this be useful? 
+
+I think it's a niche scenario, when memory usage is super important. I don't understand the details completely, but by storing multiple data values in a single number you limit how many variable descriptors you need. Instead of having five different (boolean) variables created with their own memory allocation, you can store them all at once. 
+
+That's mostly a guess. I find this whole thing intriguing, but haven't been able to find a good usecase for myself. Will hang on to this idea just in case. It's at least helpful that I now understand how this stuff works when I come across it in code.
+
+Till next time... 
