@@ -1,0 +1,17 @@
+<script webc:type="render" webc:is="render">
+  function posts() {
+   return `<div class="not-prose">
+    ${this.collections.post.map(post => (`
+      <a class="block" href="${post.url}">
+        <div class="text-xl font-semibold underline">
+          ${post.data.title} - ${this.helpers.niceDate(post.data.date)}
+        </div> 
+        <div>
+        ${post.data.excerpt}
+        </div>
+      </a>
+    `))}
+  </div>
+   ` 
+  }
+</script>

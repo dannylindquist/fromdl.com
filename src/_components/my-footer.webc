@@ -1,0 +1,19 @@
+<footer class="flex font-mono text-sm item-center justify-center py-5 text-gray-600 text-center">
+  <div>
+    Made with 💜 in Seattle
+    <br>
+    Danny Lindquist &copy; <span class="year">2022</span>
+  </div>
+</footer>
+
+<script>
+  window.customElements.define('my-footer', class extends HTMLElement {
+    connectedCallback() {
+      const year = this.querySelector('span.year');
+      const currentYear = new Date().getFullYear();
+      if(year.textContent != currentYear) {
+        year.textContent = currentYear;
+      }
+    }
+  })
+</script>

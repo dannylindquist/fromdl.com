@@ -2,9 +2,11 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🦉</text></svg>" />
+    <meta name="description" content="A blog by Danny Lindquist">
     <link webc:raw rel="stylesheet" href="/styles.css">
-    <style @html="getCSS(this.page.url)"></style>
-		<script @html="getJS(this.page.url)"></script>
+    <style @raw="getCSS(this.page.url)" webc:keep></style>
+		<script type="module" @raw="getJS(this.page.url)" webc:keep></script>
     <title @html="title"></title>
   </head>
   <body class="flex flex-col">
@@ -19,10 +21,6 @@
       <main @html="content" class="prose md:prose-lg prose-slate mx-auto">
       </main>
     </div>
-    <footer class="flex font-mono text-sm item-center justify-center py-5 text-gray-600 text-center">
-      Made with 💜 in Seattle
-      <br>
-      Danny Lindquist 2022
-    </footer>
+    <my-footer></my-footer>
   </body>
 </html>

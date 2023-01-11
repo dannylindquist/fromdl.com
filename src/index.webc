@@ -1,6 +1,6 @@
 ---
 layout: layouts/base.webc
-title: Home
+title: Danny Lindquist
 ---
 
 <p class="text-4xl font-semibold tracking-tight">Hey there!</p>
@@ -8,20 +8,4 @@ I'm Danny, a web developer from Seattle 🌧. I have a passion for the web and e
 
 <h2>Recent posts</h2>
 
-<script webc:type="render" webc:is="render">
-  function posts() {
-   return `<div class="not-prose">
-    ${this.collections.post.map(post => (`
-      <a class="block" href="${post.url}">
-        <div class="text-xl font-semibold underline">
-          ${post.data.title} - ${this.helpers.niceDate(post.data.date)}
-        </div> 
-        <div>
-        ${post.data.excerpt}
-        </div>
-      </a>
-    `))}
-  </div>
-   ` 
-  }
-</script>
+<post-list></post-list>

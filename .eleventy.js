@@ -1,6 +1,8 @@
 module.exports = function(eleventyConfig) {
 
-  eleventyConfig.addPlugin(require('@11ty/eleventy-plugin-webc'));
+  eleventyConfig.addPlugin(require('@11ty/eleventy-plugin-webc'), {
+    components: 'src/_components/**/*.webc'
+  });
   eleventyConfig.addPlugin(require("@11ty/eleventy-plugin-syntaxhighlight"));
 
   eleventyConfig.addFilter('short', function(value) {
