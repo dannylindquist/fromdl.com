@@ -79,7 +79,7 @@ We've transformed `001` by pushing the bits to get `010`, and the slot second fr
 
 If you continue this for each of the flags you might need, you will see the double in value everytime. This correaltes 1:1 with each digit of a binary value to double the previous digit (going right to left).
 
-### So what?
+### Now what?
 
 Okay now we have the ability to store some information within a single number value. Why might this be useful? 
 
